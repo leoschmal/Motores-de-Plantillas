@@ -11,12 +11,12 @@
         <% if (changeView) { %>
         <%- include('../partials/formulario', {productos: productos}) %>
         <form action="/productos" method="get">
-        <button id='change2' class="btn btn-info">Ver Productos</button>
-    </form>
+            <button id='change2' class="btn btn-info">Ver Productos</button>
+        </form>
         <% } else{ %>
         <%- include('../partials/tabla', {productos: productos}) %>
         <form action="/productos" method="get">
-        <button id='change' class="btn btn-info">Ingresar Producto</button>
+            <button id='change' class="btn btn-info">Ingresar Producto</button>
         </form>
         <% } %>
         
